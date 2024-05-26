@@ -1,0 +1,48 @@
+a { text-decoration: none; color:white }
+a:visited { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color: white }
+
+#root {
+    background: #181818;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#root-heading {
+    color: white;
+    font-family: "Major Mono Display";
+    font-size: xx-large;
+    cursor: default;
+}
+
+#root-menu {
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#root-menu > li {
+    padding-inline: 20px;
+}
+
+#root-menu > li > a {
+    font-family: "Major Mono Display";
+    font-size: large;
+    color: cadetblue;
+    transition: 0.15s;
+}
+
+#root-menu > li > a:hover {
+    color: rgb(95, 123, 160)
+}
