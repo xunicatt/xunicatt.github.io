@@ -2,7 +2,8 @@ let rootMenu = document.getElementById("root-menu");
 let rootMenuInnerHTML = "";
 
 CONFIG.rootMenuList.forEach((val) => {
-    rootMenuInnerHTML += `<li><a target=_blank"" href=${val.url}>${val.name}</a></li>\n`
+
+    rootMenuInnerHTML += `<li><a ${val.url=="#"?"":"target=\"_blank\""} href=${val.url}>${val.name}</a></li>\n`
 })
 
 rootMenu.innerHTML = rootMenuInnerHTML;
