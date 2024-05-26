@@ -37,7 +37,7 @@ a:hover, a:active { text-decoration: none; color: white }
 }
 
 #root-menu > li > a {
-    font-family: "Major Mono Display";
+    font-family: "Jaro";
     font-size: large;
     color: cadetblue;
     transition: 0.15s;
