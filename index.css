@@ -46,3 +46,9 @@ a:hover, a:active { text-decoration: none; color: white }
 #root-menu > li > a:hover {
     color: rgb(95, 123, 160)
 }
+
+@media only screen and (max-width: 420px) {
+    #root-menu > li > a {
+        font-size: medium;
+    }
+}
