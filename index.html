@@ -5,14 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+
+    <!-- MAJOR MONO DISPLAY FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+    <!-- JARO FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    
+    <!-- SILKSCREEN FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Zeyada&display=swap" rel="stylesheet">
+    
+    <!-- DUMMY JS [FIXES] -->
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
+
+    <!-- CSS -->
     <link href="/index.css" rel="stylesheet">
-    <link href="/css/theme-button.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
+    <link href="/css/about.css" rel="stylesheet">
+    <link href="/css/top-button.css" rel="stylesheet">
     <style>
         html, body {
             margin: 0;
@@ -24,14 +43,16 @@
     <title>Home</title>
 </head>
 <body>
-    <div id="root">
-        <img onclick="switchTheme()" id="theme-switch-button" src="/icons/moon.png">
-
-        <h id="root-heading">xunicatt</h>
-        <ul id="root-menu"></ul>
-    </div>
+    <img onclick="goBack()" id="back-button" src="/icons/back.png">
+    <div id="root"></div>
 </body>
-<script type="text/javascript" src="/config.js"></script>
-<script type="text/javascript" src="/index.js"></script>
-<script type="text/javascript" src="/js/theme.js"></script>
+
+<script type="text/javascript" src="/js/config.js"></script>
+<script type="text/javascript" src="/js/home.js"></script>
+<script type="text/javascript" src="/js/about.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+<script>
+    route('home');
+</script>
 </html>

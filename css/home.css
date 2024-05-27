@@ -1,0 +1,116 @@
+.home {
+    background: #181818;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#home-heading {
+    color: #edb623;
+    padding: 10px;
+    font-family: "Major Mono Display";
+    font-size: xx-large;
+    cursor: default;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    text-shadow: 0px 0px 32px #edb623;
+}
+
+#home-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-menu > li {
+    padding-inline: 20px;
+}
+
+#home-menu > li > a {
+    font-family: "Silkscreen";
+    font-weight: 100;
+    font-size: x-large;
+    color: cadetblue;
+    transition: 0.25s;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+#home-menu > li > a:hover {
+    border-top: 1px solid cadetblue;
+    border-bottom: 1px solid cadetblue;
+    color: #edb623;
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+        text-shadow:0px 0px 0px #edb623;
+    }
+
+    25% { 
+        opacity: 0.25;
+        text-shadow:0px 0px 4px #edb623;
+    }
+
+    50% { 
+        opacity: 0.5;
+        text-shadow:0px 0px 8px #edb623;
+    }
+
+    70% { 
+        opacity: 0.75;
+        text-shadow:0px 0px 16px #edb623;
+    }
+
+    100% { 
+        opacity: 1.0;
+        text-shadow:0px 0px 32px #edb623;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #home-menu > li > a {
+        font-size: larger;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #home-menu > li > a {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #home-menu > li {
+        padding-inline: 10px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #home-menu > li > a {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #home-menu > li > a {
+        font-size: medium;
+    }
+
+    #home-menu > li {
+        padding-inline: 5px;
+    }
+}
