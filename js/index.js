@@ -9,9 +9,11 @@ function router() {
             AboutMe();
             break;
 
+        case "docs":
+            alert("Docs page is not ready")
+        
         default:
             ENV.visitedPages.pop();
             console.log(`undefined page: ${ENV.page}`);
-            alert("Docs page is not ready")
     }
 }
