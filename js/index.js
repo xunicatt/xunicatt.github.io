@@ -12,5 +12,6 @@ function router() {
         default:
             ENV.visitedPages.pop();
             console.log(`undefined page: ${ENV.page}`);
+            alert("Docs page is not ready")
     }
 }
