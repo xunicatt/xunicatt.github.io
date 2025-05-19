@@ -6,6 +6,7 @@ const CONFIG = {
         { name: "Docs", route: `'docs'` },
         { name: "Instagram", url: "https://www.instagram.com/xunicatt"},
         { name: "Github", url: "https://github.com/xunicatt" },
+        { name: "Gitlab", url: "https://gitlab.com/xunicatt" },
         { name: "About Me", route: `'aboutme'` }
     ],
     theme: {
